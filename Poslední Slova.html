@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ostatni/Styly/style3.css">
+    script
+    <title>Zachraň se ještě něž můžeš</title>
+</head>
+
+<body>
+    <h1 id="text1">Zachraň se ještě něž můžeš!</h1>
+    <h1 id="text2">Když klikneš na to tlačítko, tak už nebude cesty zpátky!</h1>
+    <h1 class="textik" id="text3"></h1>
+    <a href="#"><button type="button" name="button" onclick="toggleText()" id="button1">Neklikej!</button></a>
+    <script type="text/javascript">
+        let btn = document.getElementById("button1")
+        let text = document.getElementById("text1")
+        let text2 = document.getElementById("text2")
+        let text3 = document.getElementById("text3")
+
+        function time() {
+            text.remove()
+            text3.innerHTML = "Epileptický záchvat zaručen!"
+
+        }
+
+        function newPage() {
+            window.open("ostatni/index.html", "_self")
+
+        }
+
+
+        document.getElementById("button1").
+            onclick = function () {
+                text.innerHTML = "Já jsem tě varoval."
+                text2.innerHTML = ""
+                btn.remove()
+                setTimeout(time, 3000);
+                setTimeout(newPage, 7000);
+
+            }
+    </script>
+</body>
+
+</html>
