@@ -1,0 +1,168 @@
+body {
+  background-image: url(../ZrakovyVjem/kys.gif);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+h1 {
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  animation: shake 0.1s infinite;
+}
+
+h2 {
+  animation: shake 0.1s infinite;
+}
+
+p {
+  animation: shake 0.1s infinite;
+}
+
+.Nzv {
+  text-align: center;
+  width: 55%;
+  margin: auto;
+  animation: colorRotate2 1s linear 0s infinite;
+}
+
+.YoureGnomed {
+  background-color: white;
+}
+
+.nyancat {
+  margin: -20px;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: nyancat;
+  animation-duration: 5s;
+}
+
+.rainbow {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 5px;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+.obsah {
+  background-color: rgba(255, 255, 255, 1);
+  width: 55%;
+  margin: auto;
+  line-height: 1.6;
+  text-align: center;
+  animation: chciumrit 0.5s infinite;
+}
+
+.priseljsemsihratskamenim {
+  width: 90%;
+  animation: kolaspinnin 5s infinite;
+}
+
+.TOMOMG {
+  position: absolute;
+  left: 33%;
+}
+
+.nevimproctodelam {
+  position: absolute;
+  top: 365%;
+  width: 2%;
+}
+
+.Kawaii {
+  position: absolute;
+  top: 359%;
+  width: 3%;
+  right: 0%;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+@keyframes colorRotate2 {
+  from {
+    background-color: #6666ff;
+  }
+  10% {
+    background-color: #0099ff;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #ff3399;
+  }
+  100% {
+    background-color: #6666ff;
+  }
+}
+
+@keyframes nyancat {
+  0% {
+      left: 0;
+    }
+    48% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      left: calc(100% - 100px);
+      transform: rotateY(180deg);
+    }
+    98% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: 0;
+       transform: rotateY(0deg);
+    }
+  }
+
+@keyframes chciumrit {
+  0% {
+    color: black;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes kolaspinnin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

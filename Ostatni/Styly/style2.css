@@ -1,0 +1,115 @@
+body {
+  background-image: url(../ZrakovyVjem/nyancat.gif);
+}
+
+.nyancat1 {
+  top: 45%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: nyancat1;
+  animation-duration: 5s;
+}
+
+.nyancat2 {
+  left: 45%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: nyancat2;
+  animation-duration: 5s;
+}
+
+.nyancat3 {
+  top: 45%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: nyancat3;
+  animation-duration: 5s;
+}
+
+.nyancat4 {
+  left: 45%;
+  position: absolute;
+  animation: linear infinite;
+  animation-name: nyancat4;
+  animation-duration: 5s;
+}
+
+@keyframes nyancat1 {
+  0% {
+      left: 0;
+    }
+    48% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      left: calc(100% - 100px);
+      transform: rotateY(180deg);
+    }
+    98% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: 0;
+       transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes nyancat2 {
+    0% {
+        top: 0;
+      }
+      48% {
+        transform: rotateY(0deg);
+      }
+      50% {
+        top: calc(100% - 100px);
+        transform: rotateY(180deg);
+      }
+      98% {
+        transform: rotateY(180deg);
+      }
+      100% {
+        top: 0;
+         transform: rotateY(0deg);
+      }
+    }
+
+    @keyframes nyancat3 {
+      0% {
+          right: 0;
+        }
+        48% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          right: calc(100% - 100px);
+          transform: rotateY(180deg);
+        }
+        98% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          right: 0;
+           transform: rotateY(0deg);
+        }
+      }
+
+      @keyframes nyancat4 {
+        0% {
+            bottom: 0;
+          }
+          48% {
+            transform: rotateY(0deg);
+          }
+          50% {
+            bottom: calc(100% - 100px);
+            transform: rotateY(180deg);
+          }
+          98% {
+            transform: rotateY(180deg);
+          }
+          100% {
+            bottom: 0;
+             transform: rotateY(0deg);
+          }
+        }
